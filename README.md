@@ -4,4 +4,3 @@ Repo for Poster presentation of my entire MSc Thesis (except for large files suc
 
 To add:
 - Ascomycota contig explanation
-- Merqury results for HiCanu, Shasta and Flye
