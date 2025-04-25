@@ -4,4 +4,5 @@ Repo for Poster presentation of my entire MSc Thesis (except for large files suc
 
 To add:
 - Ascomycota contig explanation
-- Blobplot for Shasta, Flye and HiCanu
+- Ref file
+- Draft thesis
