@@ -1,0 +1,59 @@
+==================================================
+file name: HiFiASM3.fasta           
+sequences:           175
+total length: 3118812714 bp  (3118812714 bp excl N/X-runs)
+GC level:         40.42 %
+bases masked: 1706058255 bp ( 54.70 %)
+==================================================
+               number of      length   percentage
+               elements*    occupied  of sequence
+--------------------------------------------------
+Retroelements       907938    577730634 bp   18.52 %
+   SINEs:                0            0 bp    0.00 %
+   Penelope:             0            0 bp    0.00 %
+   LINEs:            90028     64280388 bp    2.06 %
+    CRE/SLACS            0            0 bp    0.00 %
+     L2/CR1/Rex      10727      4355233 bp    0.14 %
+     R1/LOA/Jockey   16257     19423410 bp    0.62 %
+     R2/R4/NeSL        267       367298 bp    0.01 %
+     RTE/Bov-B       11216      4940618 bp    0.16 %
+     L1/CIN4          3533      2824245 bp    0.09 %
+   LTR elements:    817910    513450246 bp   16.46 %
+     BEL/Pao         72793     53071414 bp    1.70 %
+     Ty1/Copia      156886    101151197 bp    3.24 %
+     Gypsy/DIRS1    322574    246262462 bp    7.90 %
+       Retroviral        0            0 bp    0.00 %
+
+DNA transposons     474836    266857614 bp    8.56 %
+   hobo-Activator    38869     23806153 bp    0.76 %
+   Tc1-IS630-Pogo   227634    133076398 bp    4.27 %
+   En-Spm                0            0 bp    0.00 %
+   MULE-MuDR             0            0 bp    0.00 %
+   PiggyBac           3680      2776670 bp    0.09 %
+   Tourist/Harbinger  2340      1382056 bp    0.04 %
+   Other (Mirage,     7454      5294914 bp    0.17 %
+    P-element, Transib)
+
+Rolling-circles      52288     28212739 bp    0.90 %
+
+Unclassified:       2644760    806011963 bp   25.84 %
+
+Total interspersed repeats:  1650600211 bp   52.92 %
+
+
+Small RNA:               0            0 bp    0.00 %
+
+Satellites:              1          357 bp    0.00 %
+Simple repeats:     365288     24198201 bp    0.78 %
+Low complexity:      45142      3046747 bp    0.10 %
+==================================================
+
+* most repeats fragmented by insertions or deletions
+  have been counted as one element
+                                                      
+
+RepeatMasker version 4.1.7-p1 , default mode
+                                     
+run with rmblastn version 2.14.1+
+The query was compared to classified sequences in "HiFiASM3-families.fa"
+FamDB: 
