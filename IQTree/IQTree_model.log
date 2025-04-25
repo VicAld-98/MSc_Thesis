@@ -1,0 +1,203 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cox (AVX, FMA3, 997 GB RAM)
+Command: ../../iqtree -s clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num -spp Partition_File.txt -pre clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num -m TESTNEW -bb 10000 -nm 5000 -alrt 1000
+Seed:    351088 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 15 23:11:53 2025
+Kernel:  AVX+FMA - 1 threads (48 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 48 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file Partition_File.txt ...
+Reading alignment file clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num ... Clustal format detected
+Alignment most likely contains protein sequences
+Alignment has 28 sequences with 3912 columns, 2514 distinct patterns
+2119 parsimony-informative, 384 singleton sites, 1409 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  Phyllium_philippinicum        6.70%    passed     99.97%
+   2  Phyllium_siccifollium         1.66%    passed     94.46%
+   3  Pulchriphyllium_giganteum     5.93%    passed     54.99%
+   4  Pulchriphyllium_bioculatum    6.08%    passed     44.33%
+   5  Cryptophyllium_westwoodii     5.60%    failed      0.01%
+   6  Cryptophyllium_oyae           6.39%    passed     19.85%
+   7  Cryptophyllium_tibetense      5.60%    failed      0.95%
+   8  Nanhuaphasma_hamicercum       5.62%    passed     65.05%
+   9  Orthomeria_smaragdinum        5.65%    failed      0.03%
+  10  Phraortes_liaoningensis       5.93%    passed    100.00%
+  11  Phraortes_lianzhouensis       5.93%    passed     99.24%
+  12  Extatosoma_tiaratum           5.67%    passed     81.02%
+  13  Phasmotaenia_lanyuhensis      5.62%    passed     99.33%
+  14  Marmessoidea_bispina          5.75%    passed     99.09%
+  15  Bacillus_rossius              6.37%    passed     92.12%
+  16  Bacillus_atticus              6.47%    passed     93.70%
+  17  Pseudophasma_subapterum       5.47%    passed     65.45%
+  18  Sipyloidea_biplagiata         5.73%    passed    100.00%
+  19  Sosibia_ovata                 5.65%    passed     95.92%
+  20  Trachythorax_sexpunctatus     5.67%    passed     91.99%
+  21  Sungaya_inexpecta             5.57%    passed     92.57%
+  22  Micadina_brevioperculina      5.50%    passed    100.00%
+  23  Acanthophasma_brevicercum     5.50%    passed     98.10%
+  24  Mantis_religiosa              5.27%    failed      0.00%
+  25  Blattella_germanica           5.34%    failed      0.00%
+  26  Amitermes_laurensis           5.14%    failed      0.00%
+  27  Timema_californicum           4.88%    failed      0.00%
+  28  Grylloblatta_sculleni         5.04%    failed      0.00%
+****  TOTAL                         5.56%  8 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	28	346	267	52	LG	PROT_ND2
+2	AA	28	513	159	311	LG	PROT_COX1
+3	AA	28	230	118	85	LG	PROT_COX2
+4	AA	28	53	43	6	LG	PROT_ATP8
+5	AA	28	228	137	73	LG	PROT_ATP6
+6	AA	28	260	140	96	LG	PROT_COX3
+7	AA	28	115	70	33	LG	PROT_ND3
+8	AA	28	576	354	168	LG	PROT_ND5
+9	AA	28	471	277	143	LG	PROT_ND4
+10	AA	28	95	62	18	LG	PROT_ND4L
+11	AA	28	322	134	164	LG	PROT_ND6
+12	AA	28	380	189	156	LG	PROT_CYTB
+13	AA	28	325	171	104	LG	PROT_ND1
+Degree of missing data: 0.000
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.038 seconds
+NOTE: ModelFinder requires 247 MB RAM!
+Testing LG+F+G on supermatrix...
+LG+F+G4 / LnL: -83069.845 / df: 73 / AIC: 166285.689 / AICc: 166288.503 / BIC: 166743.568
+Selecting individual models for 13 charsets using BIC...
+ No. Model        Score       Charset
+   1 mtInv+F+G4   20943.896   PROT_ND2
+   2 mtZOA+F+I+G4 10999.251   PROT_COX1
+   3 mtMet+I+G4   8578.628    PROT_COX2
+   4 mtVer+F+G4   4185.579    PROT_ATP8
+   5 mtZOA+F+I+G4 10676.752   PROT_ATP6
+   6 mtMet+I+G4   10551.159   PROT_COX3
+   7 mtMAM+F+I+G4 5703.243    PROT_ND3
+   8 mtInv+F+I+G4 27379.399   PROT_ND5
+   9 mtInv+F+I+G4 20449.833   PROT_ND4
+  10 mtInv+G4     4588.833    PROT_ND4L	0h:27m:40s (0h:8m:18s left)
+  11 mtMet+F+G4   11317.449   PROT_ND6	0h:29m:46s (0h:5m:24s left)
+  12 mtART+F+I+G4 14179.251   PROT_CYTB	0h:31m:53s (0h:2m:39s left)
+  13 mtZOA+F+R4   12264.631   PROT_ND1	0h:34m:32s (0h:0m:0s left)
+Full partition model BIC score: 162855.481 (LnL: -80265.480  df:281)
+Partition information was printed to clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.best_scheme.nex
+Partition information in Raxml format was printed to clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.best_scheme
+
+All model information printed to clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.model.gz
+CPU time for ModelFinder: 2072.068 seconds (0h:34m:32s)
+Wall-clock time for ModelFinder: 2073.057 seconds (0h:34m:33s)
+WARNING: States(s) R, D rarely appear in partition PROT_ATP8 and may cause numerical problems
+Generating 10000 samples for ultrafast bootstrap (seed: 351088)...
+
+NOTE: 168 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -80687.534
+Current log-likelihood at step 1: -80302.022
+Current log-likelihood at step 2: -80279.493
+Current log-likelihood at step 3: -80277.035
+Current log-likelihood at step 4: -80270.381
+Current log-likelihood at step 5: -80262.650
+Current log-likelihood at step 6: -80262.517
+Current log-likelihood at step 7: -80262.471
+Partition-specific rates:  1.572 0.274 0.679 3.391 1.042 0.704 1.098 1.168 0.902 1.054 2.039 0.676 0.725
+Parameters optimization took 6 rounds (15.624 sec)
+
+Computing ML distances based on estimated model parameters... 4.740 sec
+Computing BIONJ tree...
+0.056 seconds
+Log-likelihood of BIONJ tree: -80243.972
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.208 second
+Computing log-likelihood of 98 initial trees ... 67.898 seconds
+Current best score: -80243.972
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -80232.589
+Current log-likelihood at step 1: -80232.432
+Current log-likelihood at step 2: -80232.415
+Parameters optimization took 1 rounds (3.244 sec)
+
+BETTER TREE FOUND at iteration 1: -80232.415
+Iteration 10 / LogL: -80232.423 / Time: 0h:3m:6s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -80231.473
+Current log-likelihood at step 1: -80231.282
+Current log-likelihood at step 2: -80231.271
+Parameters optimization took 1 rounds (3.210 sec)
+
+BETTER TREE FOUND at iteration 12: -80231.271
+Iteration 20 / LogL: -80232.569 / Time: 0h:5m:13s
+Finish initializing candidate tree set (3)
+Current best tree score: -80231.271 / CPU time: 287.879
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -80258.137 / Time: 0h:6m:59s (0h:19m:47s left)
+Iteration 40 / LogL: -80240.074 / Time: 0h:8m:40s (0h:16m:0s left)
+Iteration 50 / LogL: -80242.986 / Time: 0h:10m:4s (0h:12m:44s left)
+Log-likelihood cutoff on original alignment: -80318.885
+Iteration 60 / LogL: -80239.848 / Time: 0h:11m:42s (0h:10m:19s left)
+Iteration 70 / LogL: -80240.038 / Time: 0h:13m:17s (0h:8m:5s left)
+Iteration 80 / LogL: -80232.812 / Time: 0h:14m:38s (0h:5m:55s left)
+Iteration 90 / LogL: -80246.455 / Time: 0h:16m:8s (0h:3m:59s left)
+Iteration 100 / LogL: -80232.624 / Time: 0h:17m:52s (0h:2m:10s left)
+Log-likelihood cutoff on original alignment: -80318.885
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 110 / LogL: -80239.859 / Time: 0h:19m:25s (0h:16m:1s left)
+TREE SEARCH COMPLETED AFTER 113 ITERATIONS / Time: 0h:19m:48s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -80231.271
+Current log-likelihood at step 1: -80231.267
+Partition-specific rates:  1.584 0.270 0.691 3.378 1.042 0.694 1.120 1.172 0.895 1.087 2.019 0.680 0.721
+Parameters optimization took 0 rounds (1.554 sec)
+
+BEST SCORE FOUND : -80231.267
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+4.521 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.splits.nex
+Total tree length: 7.423
+
+Total number of iterations: 113
+CPU time used for tree search: 1160.088 sec (0h:19m:20s)
+Wall-clock time used for tree search: 1163.328 sec (0h:19m:23s)
+Total CPU time used: 1192.716 sec (0h:19m:52s)
+Total wall-clock time used: 1196.409 sec (0h:19m:56s)
+
+Computing bootstrap consensus tree...
+Reading input file clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.splits.nex...
+28 taxa and 150 splits.
+Consensus tree written to clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.contree
+Reading input trees file clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.contree
+Log-likelihood of consensus tree: -80233.699
+
+Analysis results written to: 
+  IQ-TREE report:                clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.iqtree
+  Maximum-likelihood tree:       clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.treefile
+  Likelihood distances:          clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.mldist
+  Best partitioning scheme:      clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.best_scheme.nex
+           in RAxML format:      clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.splits.nex
+  Consensus tree:                clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.contree
+  Screen log file:               clustalo-I20250415-205110-0628-36611392-p1m.aln-clustal_num.log
+
+Date and Time: Wed Apr 16 00:06:27 2025

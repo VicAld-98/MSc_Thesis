@@ -1,0 +1,30 @@
+#nexus
+begin sets;
+  charset PROT_ND2 = 1-346;
+  charset PROT_COX1 = 347-859;
+  charset PROT_COX2 = 860-1089;
+  charset PROT_ATP8 = 1090-1142;
+  charset PROT_ATP6 = 1143-1370;
+  charset PROT_COX3 = 1371-1630;
+  charset PROT_ND3 = 1631-1745;
+  charset PROT_ND5 = 1746-2321;
+  charset PROT_ND4 = 2320-2790;
+  charset PROT_ND4L = 2791-2885;
+  charset PROT_ND6 = 2886-3207;
+  charset PROT_CYTB = 3208-3587;
+  charset PROT_ND1 = 3588-3912;
+  charpartition mymodels =
+    mtInv+F+G4: PROT_ND2,
+    mtZOA+F+I+G4: PROT_COX1,
+    mtMet+I+G4: PROT_COX2,
+    mtVer+F+G4: PROT_ATP8,
+    mtZOA+F+I+G4: PROT_ATP6,
+    mtMet+I+G4: PROT_COX3,
+    mtMAM+F+I+G4: PROT_ND3,
+    mtInv+F+I+G4: PROT_ND5,
+    mtInv+F+I+G4: PROT_ND4,
+    mtInv+G4: PROT_ND4L,
+    mtMet+F+G4: PROT_ND6,
+    mtART+F+I+G4: PROT_CYTB,
+    mtZOA+F+R4: PROT_ND1;
+end;
